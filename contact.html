@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Portfolio Logo">
+        <span>My Portfolio</span>
+         <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li><a href="about.html" onclick="closeMenu()">About</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">Projects</a></li>
+        <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+
+    </ul>
+</nav>
+
+<!-- CONTACT HERO -->
+<section class="section">
+    <div class="contact-hero">
+        <h2>Contact Me</h2>
+        <p>Ready to bring your ideas to life? I'd love to hear from you. Let's discuss your project and see how we can collaborate.</p>
+    </div>
+</section>
+
+<!-- CONTACT INFO & FORM -->
+<section id="contact" class="section alt">
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Get In Touch</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:joshuaquidit123456@gmail.com">joshuaquidit123456@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:09358560253">09358560253</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Location</strong><br>
+                            Sankanan, Manolo Fortich, Bukidnon, Philippines
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">💼 LinkedIn</a>
+                    <a href="#" class="social-link">💻 GitHub</a>
+                    <a href="#" class="social-link">📘 Facebook</a>
+                </div>
+            </div>
+
+            <div class="contact-image">
+                <img src="contact-illustration.jpg" alt="Contact Illustration">
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <div class="contact-card">
+                <h3>Send a Message</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="section">
+    <h2>Find Me</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d124.8513921330813!3d8.328345671879479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zOC4zMjgzNDU2NzE4Nzk0NzksIDEyNC44NTEzOTIxMzMwODEz!5e0!3m2!1sen!2sph!4v1634567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | Built with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

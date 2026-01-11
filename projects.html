@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Portfolio Logo">
+        <span>My Portfolio</span>
+         <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li><a href="about.html" onclick="closeMenu()">About</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">Projects</a></li>
+        <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+
+    </ul>
+</nav>
+
+<!-- PROJECTS HERO -->
+<section class="section">
+    <div class="projects-hero">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience.</p>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section alt">
+    <div class="container-box">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="ecommerce-screenshot.jpg" alt="E-Commerce Platform">
+            </div>
+            <div class="project-content">
+                <h3>🌐 E-Commerce Platform</h3>
+                <p>A full-stack online store built with React, Node.js, and MongoDB. Features include user authentication, payment processing with Stripe, inventory management, and responsive design.</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                    <span>Stripe</span>
+                </div>
+                <button onclick="openModal('ecommerce')">View Details</button>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="taskmanager-screenshot.jpg" alt="Task Manager App">
+            </div>
+            <div class="project-content">
+                <h3>📱 Task Manager App</h3>
+                <p>A modern task management application built with Vue.js and Firebase. Includes real-time updates, drag-and-drop functionality, and collaborative features.</p>
+                <div class="project-tech">
+                    <span>Vue.js</span>
+                    <span>Firebase</span>
+                    <span>Vuex</span>
+                    <span>PWA</span>
+                </div>
+                <button onclick="openModal('taskmanager')">View Details</button>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="portfolio-screenshot.jpg" alt="Portfolio Website">
+            </div>
+            <div class="project-content">
+                <h3>🎨 Portfolio Website</h3>
+                <p>This very website! A responsive portfolio built with vanilla HTML, CSS, and JavaScript. Showcases modern design principles and smooth animations.</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive</span>
+                </div>
+                <button onclick="openModal('portfolio')">View Details</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECT STATS -->
+<section class="section">
+    <h2>Project Statistics</h2>
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3>50+</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-box">
+            <h3>10+</h3>
+            <p>Technologies Mastered</p>
+        </div>
+        <div class="stat-box">
+            <h3>5+</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-box">
+            <h3>100%</h3>
+            <p>Client Satisfaction</p>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL POPUP -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">✖</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 My Portfolio | Built with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

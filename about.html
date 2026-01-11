@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Portfolio Logo">
+        <span>My Portfolio</span>
+         <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+        <li><a href="about.html" onclick="closeMenu()">About</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">Projects</a></li>
+        <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+
+    </ul>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate full-stack developer with over 5 years of experience in building modern web applications.
+                My journey in tech started with a curiosity about how websites work, and it has evolved into a career
+                dedicated to creating exceptional digital experiences.
+            </p>
+            <p>
+                I specialize in turning complex problems into simple, beautiful, and intuitive solutions.
+                Whether it's crafting pixel-perfect user interfaces or architecting scalable backend systems,
+                I approach every project with enthusiasm and attention to detail.
+            </p>
+            <p>
+                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
+                or sharing knowledge with the developer community through blogs and workshops.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="about-me.jpg" alt="About Me" class="about-img">
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section alt">
+    <h2>My Journey</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2020 - Present</h3>
+                <h4>Senior Full-Stack Developer</h4>
+                <p>Leading development of enterprise web applications, mentoring junior developers, and implementing best practices.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2018 - 2020</h3>
+                <h4>Frontend Developer</h4>
+                <p>Specialized in React and Vue.js development, creating responsive and interactive user interfaces.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2016 - 2018</h3>
+                <h4>Junior Developer</h4>
+                <p>Started my career learning web fundamentals and contributing to various projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+    <p>
+        I specialize in a variety of technologies and tools to bring ideas to life.
+        Here's a glimpse of what I work with.
+    </p>
+
+    <div class="container-box">
+        <div class="box">
+            <h3>💻 Frontend Development</h3>
+            <p>HTML, CSS, JavaScript, React, Vue.js, TypeScript for creating interactive UIs.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 95%"></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>⚙️ Backend Development</h3>
+            <p>Node.js, Express, Python, Django, REST APIs for robust server-side solutions.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%"></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>🗄️ Databases</h3>
+            <p>MongoDB, PostgreSQL, MySQL, Redis for data management and storage.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | Built with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

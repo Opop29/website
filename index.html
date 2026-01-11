@@ -9,7 +9,6 @@
 <body>
 <nav>
     <div class="logo">
-        <img src="logo.png" alt="Portfolio Logo">
         <span>My Portfolio</span>
          <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
@@ -26,15 +25,22 @@
         <li><a href="page/about.html" onclick="closeMenu()">About</a></li>
         <li><a href="page/projects.html" onclick="closeMenu()">Projects</a></li>
         <li><a href="page/contact.html" onclick="closeMenu()">Contact</a></li>
-
+        <li class="theme-toggle">
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </li>
     </ul>
 </nav>
 
 <section id="home" class="home">
-    <div class="home-content">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Full-Stack Developer | Passionate about creating amazing web experiences</p>
-        <a href="page/contact.html" class="cta-button">Get In Touch</a>
+    <div class="home-container">
+        <div class="home-text">
+            <h1 id="typing-text"></h1>
+            <p>this is my portfolio</p>
+            <a href="page/contact.html" class="cta-button">Get In Touch</a>
+        </div>
+        <div class="home-image">
+            <img src="profile-main.jpg" alt="Op-op" class="hero-profile-img">
+        </div>
     </div>
 </section>
 <section class="section about-preview">

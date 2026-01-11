@@ -306,66 +306,177 @@ footer {
     }
 }
 
-/* PREVIEW SECTIONS */
-.preview-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
+/* HOME PAGE SECTIONS - DIFFERENT LAYOUTS */
+
+/* ABOUT PREVIEW - CENTERED LAYOUT */
+.about-preview {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-centered {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.preview-content.reverse {
-    flex-direction: row-reverse;
+.about-image-container {
+    margin-bottom: 30px;
 }
 
-.preview-text {
-    flex: 1;
+.profile-img-large {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
 }
 
-.preview-text h2 {
-    margin-bottom: 15px;
+.profile-img-large:hover {
+    transform: scale(1.05);
 }
 
-.preview-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.about-centered h2 {
     margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
-.preview-link {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+.about-centered p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.preview-link:hover {
-    color: #764ba2;
+/* PROJECTS PREVIEW - GRID LAYOUT */
+.projects-preview {
+    padding: 80px 20px;
 }
 
-.preview-image {
-    flex: 1;
+.projects-grid {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+.projects-grid h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
 
-.preview-img {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* CONTACT PREVIEW - SPLIT LAYOUT */
+.contact-preview {
+    padding: 80px 20px;
+}
+
+.contact-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact-info-preview h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.contact-info-preview p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contact-quick-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.quick-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.quick-link:hover {
+    transform: scale(1.05);
+}
+
+.contact-visual {
+    text-align: center;
+}
+
+.contact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* ABOUT PAGE STYLES */
@@ -723,8 +834,33 @@ footer {
         height: 150px;
     }
 
-    .preview-img {
+    /* Home page responsive */
+    .profile-img-large {
+        width: 200px;
         height: 200px;
+    }
+
+    .about-centered h2 {
+        font-size: 2rem;
+    }
+
+    .project-showcase {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contact-stats {
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
     }
 
     .about-content,

@@ -7,7 +7,6 @@ function closeMenu() {
     document.getElementById("menu").style.display = "none";
 }
 
-/* MODAL LOGIC */
 function openModal(type) {
     const modal = document.getElementById("modal");
     const title = document.getElementById("modal-title");
@@ -37,8 +36,6 @@ function openModal(type) {
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
-
-// Contact form submission
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Thank you for your message! I will get back to you soon.');
